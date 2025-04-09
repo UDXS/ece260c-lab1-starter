@@ -3,7 +3,7 @@
 
 yosys -import
 
-# You need to make sure this line outputs correctly, otherwise 
+# You need to make sure this line outputs correctly, otherwise you will likely need to make fixes in explore.py
 puts "Yosys is running for the design with $::env(DSE_N_CYCLES) cycles, $::env(DSE_N_PIPES) pipes, $::env(DSE_N_DEPTH) depth."
 
 # Load our design, but don't flatten it or set hierarchy yet

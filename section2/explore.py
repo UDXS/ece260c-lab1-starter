@@ -17,9 +17,9 @@ for N_CYCLES in N_CYCLES_range:
     print(f"== Running DSE step for {N_CYCLES} cycles - {N_PIPES} pipes at {N_DEPTH} depth ==")
     
     # Every step requires running yosys and OpenSTA.
-    # TODO: We need to lift our parameters to environment variables so that Yosys can read in - corresponding to our parameters
+    # We need to lift our parameters to environment variables so that Yosys can read in - corresponding to our parameters
     os.environ["DSE_N_CYCLES"] = str(N_CYCLES)
-    # TODO: ...
+    # TODO: Add similar os.environ calls for N_PIPES and N_DEPTH...
 
     # Now, we can call yosys. Make sure your synth.tcl is complete.
     os.system("yosys -c synth.tcl")
