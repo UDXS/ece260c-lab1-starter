@@ -1,0 +1,22 @@
+{
+    "image": "udxs/ece260c:v1",
+    "name": "ECE 260C Image",
+    "containerEnv": {
+        "DISPLAY": ":5"
+    },
+    "postStartCommand": "/usr/bin/gui_start && bash -l",
+    "shutdownAction": "stopContainer",
+    "forwardPorts": [
+        5905
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "llvm-vs-code-extensions.vscode-clangd",
+                "chipsalliance.verible",
+                "ms-python.python",
+                "rashwell.tcl"
+            ]
+        }
+    }
+}
