@@ -4,7 +4,7 @@
     "containerEnv": {
         "DISPLAY": ":5"
     },
-    "postStartCommand": "/usr/bin/gui_start && bash -l",
+    "postStartCommand": "/usr/bin/gui_start",
     "shutdownAction": "stopContainer",
     "forwardPorts": [
         5905
